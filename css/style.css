@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-font:"Arvo", serif;
+    --secondary-font:"Montserrat", sans-serif;
+    --third-font:"Open Sans", sans-serif;
+}
+/* =============================== */
+.gallery{
+    max-height: 250vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 2fr 2fr 2fr 1fr ;
+    grid-template-areas:
+    'iphone iphone lab lab'
+    'keyboard imac imac icloud'
+    'games ux ux icloud'
+    'twitter pop tv tv' ;
+}
+.gallery .iphone{
+    background-color: #FFFFFF;
+    grid-area: iphone;
+}
+.gallery .iphone .inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 100%;
+}
+.gallery .iphone .inner .data{
+    padding-left: 20px;
+    margin-bottom: 70px;
+    width: 28%;
+}
+.gallery .iphone .inner .data h6{
+    font-family: var(--secondary-font);
+    color: #9FA3A7;
+    font-size: 12px;
+    font-weight: 700;
+}
+.gallery .iphone .inner .data h3{
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 400;
+    color: #333333;
+}
+.gallery .iphone .inner .data p{
+    font-family: var(--third-font);
+    font-size: 14px;
+    font-weight: 400;
+    color:#9FA3A7 ;
+}
+.gallery .iphone .inner img{
+    display: block;
+    width: 40%;
+    padding-right: 20px;
+}
+/* ================================== */
+.gallery .lab{
+    background-color: #F7F8F9;
+    grid-area: lab;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gallery .lab .inner{    
+    padding: 0 80px;
+}
+.gallery .lab .inner h6{
+    font-family: var(--secondary-font);
+    color: #9FA3A7;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.gallery .lab .inner h1{
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0 0  10px 0;
+}
+.gallery .lab .inner a{
+    font-family: var(--third-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: #27B9C2;
+}
+/* ================================== */
+.gallery .keyboard{
+    background-color: #F05638;
+    grid-area: keyboard;
+    text-align: center;
+    padding-bottom: 45px;
+}
+.gallery .keyboard .inner img{
+    margin-top: 60px;
+    width: 100%;
+}
+.gallery .keyboard .inner h3{
+    font-family:var(--main-font) ;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    line-height: 1.4;
+}
+.gallery .keyboard .inner a{
+    text-decoration: none;
+    font-family: var(--third-font);
+    font-size: 12px;
+    font-weight: 700;
+    color:#FFC80A ;
+    letter-spacing: 2px;
+}
+/* ================================== */
+.gallery .imac{
+    background-color: #FFFFFF;
+    grid-area: imac;
+}
+.gallery .imac .inner{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.gallery .imac .inner .dt-1{
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    padding-left: 15px;
+}
+.gallery .imac .inner .dt-1 h6{
+    font-family: var(--secondary-font);
+    font-size: 12px;
+    font-weight: 700;
+    color: #9FA3A7;
+    padding-left: 50px;
+    margin: 80px 0 0 0;
+    letter-spacing: 2px;
+}
+.gallery .imac .inner .dt-1 h3{
+    font-family:var(--main-font) ;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 50px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.gallery .imac .inner .dt-1 img{
+    display: block;
+    width: 170%;
+    position: absolute;
+    left: -220px;
+    bottom: 0;
+}
+.gallery .imac .inner .dt-2{
+    width: 50%;
+}
+.gallery .imac .inner .dt-2 p{
+    font-family: var(--third-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: #9FA3A7;
+    line-height: 2;
+
+    margin-top: 80px;
+    padding-left: 10px;
+}
+.gallery .imac .inner .dt-2 a{
+    font-family: var(--third-font);
+    font-size: 12px;
+    font-weight: 700;
+    color: #27B9C2;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+/* ================================== */
+.gallery .icloud{
+    background-color: #8F76BC;
+    grid-area: icloud;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .icloud .pt1{
+    background-color: #8166B0;
+    width: 380px;
+    height: 380px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.gallery .icloud .pt1 .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8F76BC;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    border-radius: 20px;
+    padding: 6px 14px;
+    letter-spacing: 3px;
+}
+.gallery .icloud .pt1 .title img{
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-top: 0;
+}
+.gallery .icloud .pt1 .title p{
+    margin: 0;
+    font-family: var(--third-font);
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.gallery .icloud .pt1 img{
+    width: 60%;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+.gallery .icloud .pt1 p{
+    font-family: var(--secondary-font);
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+.gallery .icloud .pt2 h2{
+    font-family:var(--main-font) ;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.gallery .icloud .pt2 p{
+    font-family: var(--third-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 2;
+    margin-top: 8px;
+}
+.gallery .icloud .pt2 button{
+    color: #000000;
+    background-color:#FFC80A;
+    font-family: var(--third-font);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: 0;
+    padding: 20px 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* ================================== */
+.gallery .games{
+    background-color: #F7F8F9;
+    grid-area: games;
+    text-align: center;
+}
+.gallery .games .inner{
+    height: 100%;
+}
+.gallery .games .inner img{
+    width: 80%;
+    margin: 40px 30px 0 0;
+    display: block;
+}
+.gallery .games .inner h3{
+    font-family:var(--main-font) ;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.4;
+    margin: 0 0 50px 0;
+}
+.gallery .games .inner a{
+    text-decoration: none;
+    font-family: var(--third-font);
+    font-size: 12px;
+    font-weight: 700;
+    color:#27B9C2 ;
+    letter-spacing: 2px;
+}
+/* ================================== */
+.gallery .ux{
+    background-color: #93B6B7;
+    grid-area: ux;
+    background-image: url(../css/images/ux.png);
+    background-position: 50% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.gallery .ux p{
+    font-family: var(--third-font);
+    font-size: 8px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color:#FA684F ;
+    width: fit-content;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    position: absolute;
+    top: 12px;
+    left: 30px;
+}
+.gallery .ux h3{
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 80px;
+}
+.gallery .ux img{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: -8%;
+    margin: auto;
+}
+
+/* ================================== */
+.gallery .twitter{
+    background-color: #38D5F4;
+    grid-area: twitter;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.gallery .twitter .inner{
+    background-color: #35CFED;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.gallery .twitter .inner img{
+    width: 45px;
+}
+.gallery .twitter .inner h3{
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin:10px 0 0 0;
+}
+/* ================================== */
+.gallery .pop{
+    background-color: #F7F8F9;
+    grid-area: pop;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery .pop .inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.gallery .pop .inner p{
+    font-family: var(--third-font);
+    font-size: 8px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color:#7BC424 ;
+    width: fit-content;
+    padding: 5px 6px;
+    letter-spacing: 4px;
+    border-radius: 5px;
+}
+.gallery .pop .inner h3{
+    font-family:var(--main-font) ;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.4;
+    margin: 5px 0 0 0;
+}
+/* ================================== */
+.gallery .tv{
+    background-color: #2C2C2C;
+    grid-area: tv;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+.gallery .tv img{
+    width: 43%;
+    height: fit-content;
+    position:relative;
+    top: -30px;
+}
+.gallery .tv h3{
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: auto;
+}
