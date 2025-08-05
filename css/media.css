@@ -1,0 +1,72 @@
+@media (min-width:500px) and (max-width:992px){
+    .gallery{
+    max-height: 500vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1.5fr 2fr 2fr 2fr 2.25fr 2fr 0.8fr 1.4fr ;
+    grid-template-areas:
+     'lab lab'
+     'iphone iphone'
+     'keyboard games'
+     'imac imac'
+     'twitter icloud'
+     'ux icloud'
+     'pop pop'
+     'tv tv' ;
+    }
+    .gallery .lab .inner{    
+    padding: 0 40px;
+    }
+    .gallery .lab .inner h1{
+    font-size: 35px;
+    margin: 20px 0;
+    }
+    /* =================== */
+    .gallery .keyboard{
+    padding-bottom: 55px;
+    }
+    .gallery .keyboard .inner h3{
+    margin-top: 0;
+    }
+    .gallery .keyboard .inner img{
+    margin-top: 60px;
+    width: 300px;
+    }
+    /* =================== */
+    .gallery .games .inner h3{
+    margin: 20px 0 40px 0;
+    }
+    .gallery .games .inner img{
+    width: 250px;
+    }
+    /* ==================== */
+    .gallery .imac .inner .dt-1 h6{
+    margin: 60px 0 0 0;
+    }
+    .gallery .imac .inner .dt-2 p{
+    margin-top: 60px;
+    }
+    /* ================ */
+    .gallery .pop .inner h3{
+        width: 100%;
+    }
+    /* ===================== */
+    /* ===================== */
+    .gallery .tv img{
+    width: 300px;
+    height: fit-content;
+    position:relative;
+    top: 5px;
+    }
+@media screen and (min-width:768px){
+    
+} 
+@media screen and (min-width:992px){
+    
+}
+@media screen and (min-width:1200px){
+    
+}
+@media screen and (min-width:1400px){
+
+}

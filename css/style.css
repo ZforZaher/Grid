@@ -40,22 +40,27 @@ body{
     color: #9FA3A7;
     font-size: 12px;
     font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0;
 }
 .gallery .iphone .inner .data h3{
     font-family: var(--main-font);
     font-size: 22px;
     font-weight: 400;
     color: #333333;
+    line-height:1.5;
+    margin-top: 7px;
 }
 .gallery .iphone .inner .data p{
     font-family: var(--third-font);
     font-size: 14px;
     font-weight: 400;
     color:#9FA3A7 ;
+    line-height: 1.5;
 }
 .gallery .iphone .inner img{
     display: block;
-    width: 40%;
+    height: 350px;
     padding-right: 20px;
 }
 /* ================================== */
@@ -83,6 +88,7 @@ body{
     font-size: 48px;
     font-weight: 400;
     margin: 0 0  10px 0;
+    color: #333333;
 }
 .gallery .lab .inner a{
     font-family: var(--third-font);
@@ -131,6 +137,9 @@ body{
     overflow: hidden;
     width: 40%;
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .gallery .imac .inner .dt-1 h6{
     font-family: var(--secondary-font);
@@ -152,9 +161,9 @@ body{
 }
 .gallery .imac .inner .dt-1 img{
     display: block;
-    width: 170%;
-    position: absolute;
-    left: -220px;
+    width: 450px;
+    position: relative;
+    left: -240px;
     bottom: 0;
 }
 .gallery .imac .inner .dt-2{
@@ -166,7 +175,6 @@ body{
     font-weight: 400;
     color: #9FA3A7;
     line-height: 2;
-
     margin-top: 80px;
     padding-left: 10px;
 }
@@ -266,6 +274,10 @@ body{
     background-color: #F7F8F9;
     grid-area: games;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .gallery .games .inner{
     height: 100%;
@@ -300,6 +312,9 @@ body{
     background-size: 80%;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .gallery .ux p{
     font-family: var(--third-font);
@@ -393,7 +408,8 @@ body{
     font-weight: 400;
     color: #333333;
     line-height: 1.4;
-    margin: 5px 0 0 0;
+    margin: 5px auto 0 auto;
+    width: 70%;
 }
 /* ================================== */
 .gallery .tv{
@@ -401,14 +417,20 @@ body{
     grid-area: tv;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     overflow: hidden;
 }
+.gallery .tv .inner{
+    background-color: red;
+    width: 100%;
+}
 .gallery .tv img{
-    width: 43%;
+    width: 280px;
     height: fit-content;
     position:relative;
-    top: -30px;
+    top: -2px;
 }
 .gallery .tv h3{
     font-family: var(--main-font);
@@ -416,4 +438,6 @@ body{
     font-weight: 400;
     color: #FFFFFF;
     margin: auto;
+    line-height: 1.5;
+    width: 30%;
 }
